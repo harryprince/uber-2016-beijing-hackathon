@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<style type="text/css">
+		html,body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";font-size:14px;}
+		#allmap{height:500px;width:100%;}
+		.optionpanel{margin: 10px;}
+		#r-result{width:100%;}
+		#r-result p{margin:5px 0 0 10px;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NGuStU19pH89UvriLKlr9Qk5"></script>
+  <script type="text/javascript">
+  	// 百度地图API功能
+  	var map = new BMap.Map("allmap");
+  	map.centerAndZoom("北京市海淀区",20);  //初始化地图,设置城市和地图级别。
+  	var pointA = new BMap.Point(106.486654,29.490295);  // 创建点坐标A--大渡口区
+  	var pointB = new BMap.Point(106.581515,29.615467);  // 创建点坐标B--江北区
+  	alert('从大渡口区到江北区的距离是：'+(map.getDistance(pointA,pointB)).toFixed(2)+' 米。');  //获取两点距离,保留小数点后两位
+  	var polyline = new BMap.Polyline([pointA,pointB], {strokeColor:"blue", strokeWeight:6, strokeOpacity:0.5});  //定义折线
+  	map.addOverlay(polyline);     //添加折线到地图上
+  </script>
+
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<title>个性底图设置模板Demo页</title>
+</head>
+<body>
+	<div id="allmap"></div>
+<div id="r-result">
+
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="http://developer.baidu.com/map/custom/stylelist.js"></script>
+
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");            // 创建Map实例
+	map.centerAndZoom("北京市海淀区",15);
+	var mPoint = new BMap.Point(116.324356,39.981975);
+	map.enableScrollWheelZoom();
+	// map.centerAndZoom(mPoint,15);
+
+	var circle = new BMap.Circle(mPoint,500,{fillColor:"blue", strokeWeight: 1 ,fillOpacity: 0.3, strokeOpacity: 0.3});
+    map.addOverlay(circle);
+    var local =  new BMap.LocalSearch(map, {renderOptions: {map: map, autoViewport: false}});
+    local.searchNearby('银行',mPoint,1000);
+</script>

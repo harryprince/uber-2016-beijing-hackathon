@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <style type="text/css">
+    body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";background-image:url("img/map.png");background-size:inherit;}
+    p{margin-left:5px; font-size:14px;}
+  </style>
+
+	<title>pixi.js example 13</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+
+	<script src="js/pixi.js/bin/pixi.js"></script>
+
+</head>
+<body>
+  <script type="text/javascript">
+
+  console.log("started")
+  var renderer = PIXI.autoDetectRenderer(1080, 1920, { transparent: true });
+
+    document.body.appendChild(renderer.view);
+    var stage = new PIXI.Container();
+    // var background = PIXI.Sprite.fromImage('img/map.png');
+    stage.interactive = true;
+    // stage.addChild(background);
+
+
+  var startPoint = PIXI.Sprite.fromImage('img/green.png');
+    startPoint.anchor.set(0.5);
+    startPoint.scale.set(0.1);
+    // startPoint.position.x= 470;
+    // startPoint.position.y= 450;
+
+    startPoint.position.x= 470;
+    startPoint.position.y= 200;
+    stage.addChild(startPoint)
+
+  var route = PIXI.Sprite.fromImage('img/green-line2.png');
+    route.anchor.set(0.5);
+    route.scale.set(0.5);
+    route.position.x= startPoint.position.x;
+    route.position.y= startPoint.position.y +450;
+    stage.addChild(route)
+
+  var endPoint = PIXI.Sprite.fromImage('img/red.svg');
+    endPoint.anchor.set(0.5);
+    endPoint.scale.set(0.4);
+    endPoint.position.x= startPoint.position.x;
+    endPoint.position.y= route.position.y + 450;
+    stage.addChild(endPoint)
+
+  var peoples = [];
+  var people =  PIXI.Sprite.fromImage('img/wolfwithcircle.png');
+    people.anchor.set(0.5);
+  	people.scale.set(0.5);
+  	people.position.x = startPoint.position.x;
+  	people.position.y = startPoint.position.y;
+    people.interactive = true;
+    // fire.direction = 1 ;
+  	people.speed = 3 ;
+  	peoples.push(people);
+	  stage.addChild(people);
+      //
+    var userScore = 0
+
+    /////
+
+    var style = {
+      font : 'bold italic 36px Arial',
+      fill : '#F7EDCA',
+      stroke : '#4a1850',
+      strokeThickness : 5,
+      dropShadow : true,
+      dropShadowColor : '#000000',
+      dropShadowAngle : Math.PI / 6,
+      dropShadowDistance : 6,
+      wordWrap : true,
+      wordWrapWidth : 340
+    };
+
+    var richText = new PIXI.Text('Rich text with a lot of options and across multiple lines',style);
+    richText.x = 30;
+    richText.y = 180;
+
+    // stage.addChild(richText);
+
+    /////
+
+    var towerTexture = PIXI.Texture.fromImage('img/tower.png');
+    var peopleTexture = PIXI.Texture.fromImage('img/people1.png');
+    var wolfTexture = PIXI.Texture.fromImage('img/wolf.png');
+    var tRedTexture = PIXI.Texture.fromImage('img/tower_red.png');
+    var tBlueTexture = PIXI.Texture.fromImage('img/tower_blue.png');
+    var tWhiteTexture = PIXI.Texture.fromImage('img/red_on_fire.png');
+    // var tWhiteTexture = PIXI.Texture.fromImage('img/tower_white.png');
+
+    var fireTexture = PIXI.Texture.fromImage('img/fire.png');
+
+    var dest = {
+    	start: {x: startPoint.position.x, y: startPoint.position.y},
+    	end: {x: endPoint.position.x, y: endPoint.position.y},
+    	startTime: Date.now(),
+    	endTime: Date.now()+60000,
+    }
+
+    var towers = [
+    	{x: startPoint.position.x-100*(0.8 + Math.random() * 0.3), y: startPoint.position.y+100, score: 100, force: 'blue'},
+      {x: startPoint.position.x-100, y: startPoint.position.y+170*(0.8 + Math.random() * 0.3), score: 100, force: 'red'},
+      {x: startPoint.position.x+100, y: startPoint.position.y+50, score: 100, force: 'red'},
+      {x: startPoint.position.x-150, y: startPoint.position.y+200, score: 100, force: 'red'},
+
+    	{x: startPoint.position.x+155*(0.8 + Math.random() * 0.3), y: startPoint.position.y+200, score: 100, force: 'blue'},
+    	{x: startPoint.position.x-100, y: startPoint.position.y+325, score: 0, force: 'white'},
+    	{x: startPoint.position.x+150, y: startPoint.position.y+300, score: 100, force: 'red'},
+    	{x: startPoint.position.x-130, y: startPoint.position.y+500*(0.6 + Math.random() * 0.2), score: 100, force: 'red'},
+      {x: startPoint.position.x+150, y: startPoint.position.y+800*(0.8 + Math.random() * 0.2), score: 100, force: 'red'},
+      {x: startPoint.position.x-150, y: startPoint.position.y+700, score: 100, force: 'red'},
+      {x: startPoint.position.x+200, y: startPoint.position.y+700, score: 100, force: 'white'},
+      {x: startPoint.position.x+150, y: startPoint.position.y+600, score: 100, force: 'red'},
+
+      {x: startPoint.position.x+55, y: startPoint.position.y+200, score: 100, force: 'blue'},
+    	{x: startPoint.position.x-200, y: startPoint.position.y+325, score: 0, force: 'white'},
+    	{x: startPoint.position.x+450, y: startPoint.position.y+300, score: 100, force: 'red'},
+    	{x: startPoint.position.x-230, y: startPoint.position.y+500, score: 100, force: 'red'},
+      {x: startPoint.position.x+350, y: startPoint.position.y+800, score: 100, force: 'white'},
+      {x: startPoint.position.x-250, y: startPoint.position.y+650, score: 100, force: 'red'},
+      {x: startPoint.position.x+200, y: startPoint.position.y+750, score: 100, force: 'red'},
+      {x: startPoint.position.x+250, y: startPoint.position.y+650, score: 100, force: 'red'},
+
+      {x: startPoint.position.x-150, y: startPoint.position.y+900, score: 100, force: 'red'},
+      {x: startPoint.position.x+100, y: startPoint.position.y+970, score: 100, force: 'red'},
+      {x: startPoint.position.x-150, y: startPoint.position.y+840, score: 100, force: 'blue'},
+      {x: startPoint.position.x-200, y: startPoint.position.y+400, score: 100, force: 'white'},
+
+    	{x: startPoint.position.x+100, y: startPoint.position.y+300, score: 100, force: 'red'},
+    ]
+
+    towers.forEach(function (data){
+    	var sprite = null
+    	if (data.force == 'red') {
+    		sprite = new PIXI.Sprite(tRedTexture);
+    	} else if (data.force == 'blue') {
+    		sprite = new PIXI.Sprite(tBlueTexture);
+    	} else {
+    		sprite = new PIXI.Sprite(tWhiteTexture);
+    	}
+    	sprite.buttonMode = true;
+    	sprite.position.x = data.x;
+    	sprite.position.y = data.y;
+    	sprite.scale.set(0.2);
+    	sprite.anchor.set(0.5);
+    	sprite.interactive = true;
+
+
+    	sprite.on('touchstart', function(ev){
+        console.log("started")
+
+    		console.log(ev)
+    		console.log(this)
+
+    		// if ()
+    		var distance = Math.sqrt((dest.currentX-ev.target.position.x)*(dest.currentX-ev.target.position.x) + (dest.currentY-ev.target.position.y)*(dest.currentY-ev.target.position.y))
+    		console.log(distance)
+    		if (distance < 400) {
+    			// setTimeout(function(){
+    				// console.log(ev.target.data);
+    			  var data = ev.target.data
+    				if (data.force == "white") {
+    					data.score = 100
+    					data.text.text = ""+data.score
+    					data.force = "blue"
+    					data.sprite.texture = tBlueTexture
+    					userScore += 100
+    					updateScore()
+    					fireMessage("Occupied!")
+    				} else if (data.force == "red") {
+    					if (data.score > 0) {
+    						data.score -= 10
+    						userScore += 10
+    						updateScore()
+    					}
+    					data.text.text = ""+data.score
+    					fireMessage("Hitted!")
+
+
+    					if (data.score <= 1) {
+    						data.sprite.texture = tWhiteTexture
+    						data.force = "white"
+    						// stage.removeChild(ev.target)
+    						// stage.removeChild(data.text)
+    					}
+    					fire({x: dest.currentX, y: dest.currentY}, ev.target.position)
+    				}
+
+    				// console.log(ev.target.data);
+    			// },1000)
+    		}
+
+    	})
+
+    	stage.addChild(sprite)
+    	data.sprite = sprite
+    	sprite.data = data
+
+    	var text = new PIXI.Text(""+data.score, {fill: 'red',font : '18px Arial'});
+    	text.x = data.x-10;
+    	text.y = data.y+30;
+    	stage.addChild(text)
+    	data.text = text
+    })
+
+    var fireBalls = []
+
+    function fire(start, end) {
+      console.log("fire!")
+    	var ball = {
+    		start: start,
+    		end: end,
+    		startTime: Date.now(),
+    		endTime: Date.now()+500,
+    	}
+
+    	var sprite = new PIXI.Sprite(fireTexture);
+    	sprite.buttonMode = true;
+    	sprite.position.x = ball.start.x;
+    	sprite.position.y = ball.start.y;
+    	sprite.scale.set(0.05);
+    	sprite.anchor.set(0.5);
+
+    	ball.sprite = sprite
+    	stage.addChild(sprite)
+    	fireBalls.push(ball)
+    }
+
+    // fire({x: 300, y: 100}, {x: 600, y: 300})
+
+    var message = new PIXI.Text('',{
+    	fill : '#FFF',
+    	strokeThickness : 5,
+    })
+    message.x = 200
+    message.y = 10
+
+    stage.addChild(message)
+
+    function fireMessage(text) {
+      message.text = text
+    	setTimeout(function(){
+    		if (message && message.text == text) message.text = ""
+    	}, 3000)
+    }
+
+    var score = new PIXI.Text('score: ',{
+    	fill : '#FFF',
+    	strokeThickness : 5,
+    })
+    score.x = 500
+    score.y = 10
+
+    stage.addChild(score)
+
+    function updateScore(text) {
+      score.text = 'final score: ' + userScore
+    }
+
+
+    function finish() {
+
+      var graphics = new PIXI.Graphics();
+      // set a fill and a line style again and draw a rectangle
+      graphics.lineStyle(2, 0x0000FF, 1);
+      graphics.beginFill(0xFF700B, 1);
+      graphics.drawRect(150, 100, 500, 400);
+      stage.addChild(graphics);
+
+      var score = new PIXI.Text('score: ' + userScore,{
+        fill : '#FFF',
+        strokeThickness : 5,
+      })
+      score.x = 300
+      score.y = 300
+
+      stage.addChild(score)
+    }
+
+var finished = false;
+    animate();
+
+    requestAnimationFrame(animate);
+
+function animate() {
+  var now = Date.now()
+	var progress = (Date.now() - dest.startTime)/(dest.endTime - dest.startTime)
+	if (Date.now() < dest.endTime) {
+		// console.log(progress * (dest.end.x - dest.start.x))
+		// console.log(progress * (dest.end.x - dest.start.x) + dest.start.x)
+		dest.currentX = progress * (dest.end.x - dest.start.x) + dest.start.x
+		dest.currentY = progress * (dest.end.y - dest.start.y) + dest.start.y
+		people.position.x = dest.currentX;
+		people.position.y = dest.currentY;
+	} else if(!finished) {
+    finished = true
+    finish()
+  }
+
+	fireBalls.forEach(function(ball){
+		var progress = (Date.now() - ball.startTime)/(ball.endTime - ball.startTime)
+		if (Date.now() < ball.endTime) {
+			ball.currentX = progress * (ball.end.x - ball.start.x) + ball.start.x
+			ball.currentY = progress * (ball.end.y - ball.start.y) + ball.start.y
+			ball.sprite.position.x = ball.currentX;
+			ball.sprite.position.y = ball.currentY;
+		} else {
+			stage.removeChild(ball.sprite)
+		}
+	})
+
+  // people
+  // for (var x = 0; x < peoples.length; x++)
+  // {
+  // //   // console.log(i)
+  // //     var people = ps[];
+  // //     // people.position.x += people.direction * people.speed;
+  //     people.position.x += 0;
+  //     people.position.y += people.speed;
+  //     //
+  //
+  //     // if(people.position.y>= endPoint.position.y){
+  //     //   people.position.x = endPoint.position.x
+  //     //   people.position.y = endPoint.position.y
+  //     // }
+  //
+  // }
+
+    // render the stage
+    renderer.render(stage);
+
+    requestAnimationFrame(animate);
+}
+
+  </script>
+</body>
+</html>

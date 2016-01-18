@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4BC179AD7E0ED0AFE6F47A06E031D46F3C2CB414",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "630FA58CB7188E31E30701D1CFE1A173BAD01AB3" : 0,
+    "4BC179AD7E0ED0AFE6F47A06E031D46F3C2CB414" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10A7EAA4-A78A-4591-8B6D-FEC01ED3F9FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "630FA58CB7188E31E30701D1CFE1A173BAD01AB3" : "",
+    "4BC179AD7E0ED0AFE6F47A06E031D46F3C2CB414" : "STAPI-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "STAPI_Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "STAPI_Demo\/STAPI_Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SenseTimeApp\/STAPI-iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4BC179AD7E0ED0AFE6F47A06E031D46F3C2CB414"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:harryprince\/uber-2016-beijing-hackathon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "630FA58CB7188E31E30701D1CFE1A173BAD01AB3"
+    }
+  ]
+}

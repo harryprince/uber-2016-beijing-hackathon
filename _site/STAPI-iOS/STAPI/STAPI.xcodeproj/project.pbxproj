@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F76F69AD1C3A72110091354C /* STAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69A01C3A72110091354C /* STAPI.m */; };
+		F76F69AE1C3A72110091354C /* STCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69A21C3A72110091354C /* STCommon.m */; };
+		F76F69AF1C3A72110091354C /* STFace.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69A41C3A72110091354C /* STFace.m */; };
+		F76F69B01C3A72110091354C /* STFaceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69A61C3A72110091354C /* STFaceSet.m */; };
+		F76F69B11C3A72110091354C /* STGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69A81C3A72110091354C /* STGroup.m */; };
+		F76F69B21C3A72110091354C /* STImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69AA1C3A72110091354C /* STImage.m */; };
+		F76F69B31C3A72110091354C /* STPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69AC1C3A72110091354C /* STPerson.m */; };
+		F76F69BF1C3A73CD0091354C /* STAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76F69BA1C3A73CD0091354C /* STAPITests.m */; };
+		FE616DB01C326B05007E8250 /* lib_STAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE616D9B1C326A91007E8250 /* lib_STAPI.a */; };
+		FE8F581F1C3EA01E00CD1C02 /* Jack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE8F581C1C3EA01E00CD1C02 /* Jack.jpg */; };
+		FE8F58201C3EA01E00CD1C02 /* Jay1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE8F581D1C3EA01E00CD1C02 /* Jay1.jpg */; };
+		FE8F58211C3EA01E00CD1C02 /* Jay2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE8F581E1C3EA01E00CD1C02 /* Jay2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE616DB11C326B05007E8250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE616D931C326A91007E8250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE616D9A1C326A91007E8250;
+			remoteInfo = LFAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE616D991C326A91007E8250 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F76F699F1C3A72110091354C /* STAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STAPI.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69A01C3A72110091354C /* STAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STAPI.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69A11C3A72110091354C /* STCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STCommon.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69A21C3A72110091354C /* STCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STCommon.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69A31C3A72110091354C /* STFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STFace.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69A41C3A72110091354C /* STFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STFace.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69A51C3A72110091354C /* STFaceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STFaceSet.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69A61C3A72110091354C /* STFaceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STFaceSet.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69A71C3A72110091354C /* STGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STGroup.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69A81C3A72110091354C /* STGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STGroup.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69A91C3A72110091354C /* STImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STImage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69AA1C3A72110091354C /* STImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STImage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69AB1C3A72110091354C /* STPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = STPerson.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F76F69AC1C3A72110091354C /* STPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STPerson.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F76F69B91C3A73CD0091354C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76F69BA1C3A73CD0091354C /* STAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = STAPITests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		FE616D9B1C326A91007E8250 /* lib_STAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib_STAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE616DAB1C326B05007E8250 /* _STAPI.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = _STAPI.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8F581A1C3E963200CD1C02 /* MyAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAPIKey.h; path = ../../MyAPIKey.h; sourceTree = "<group>"; };
+		FE8F581C1C3EA01E00CD1C02 /* Jack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jack.jpg; sourceTree = "<group>"; };
+		FE8F581D1C3EA01E00CD1C02 /* Jay1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jay1.jpg; sourceTree = "<group>"; };
+		FE8F581E1C3EA01E00CD1C02 /* Jay2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jay2.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE616D981C326A91007E8250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616DA81C326B05007E8250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE616DB01C326B05007E8250 /* lib_STAPI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F76F699E1C3A72110091354C /* STAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F76F699F1C3A72110091354C /* STAPI.h */,
+				F76F69A01C3A72110091354C /* STAPI.m */,
+				F76F69A11C3A72110091354C /* STCommon.h */,
+				F76F69A21C3A72110091354C /* STCommon.m */,
+				F76F69A31C3A72110091354C /* STFace.h */,
+				F76F69A41C3A72110091354C /* STFace.m */,
+				F76F69A51C3A72110091354C /* STFaceSet.h */,
+				F76F69A61C3A72110091354C /* STFaceSet.m */,
+				F76F69A71C3A72110091354C /* STGroup.h */,
+				F76F69A81C3A72110091354C /* STGroup.m */,
+				F76F69A91C3A72110091354C /* STImage.h */,
+				F76F69AA1C3A72110091354C /* STImage.m */,
+				F76F69AB1C3A72110091354C /* STPerson.h */,
+				F76F69AC1C3A72110091354C /* STPerson.m */,
+			);
+			path = STAPI;
+			sourceTree = "<group>";
+		};
+		F76F69B41C3A73CC0091354C /* STAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE8F581B1C3EA01E00CD1C02 /* images */,
+				F76F69B91C3A73CD0091354C /* Info.plist */,
+				F76F69BA1C3A73CD0091354C /* STAPITests.m */,
+			);
+			path = STAPITests;
+			sourceTree = "<group>";
+		};
+		FE616D921C326A91007E8250 = {
+			isa = PBXGroup;
+			children = (
+				FE8F581A1C3E963200CD1C02 /* MyAPIKey.h */,
+				F76F699E1C3A72110091354C /* STAPI */,
+				F76F69B41C3A73CC0091354C /* STAPITests */,
+				FE616D9C1C326A91007E8250 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE616D9C1C326A91007E8250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE616D9B1C326A91007E8250 /* lib_STAPI.a */,
+				FE616DAB1C326B05007E8250 /* _STAPI.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE8F581B1C3EA01E00CD1C02 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FE8F581C1C3EA01E00CD1C02 /* Jack.jpg */,
+				FE8F581D1C3EA01E00CD1C02 /* Jay1.jpg */,
+				FE8F581E1C3EA01E00CD1C02 /* Jay2.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE616D9A1C326A91007E8250 /* STAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE616DA41C326A91007E8250 /* Build configuration list for PBXNativeTarget "STAPI" */;
+			buildPhases = (
+				FE616D971C326A91007E8250 /* Sources */,
+				FE616D981C326A91007E8250 /* Frameworks */,
+				FE616D991C326A91007E8250 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STAPI;
+			productName = LFAPI;
+			productReference = FE616D9B1C326A91007E8250 /* lib_STAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE616DAA1C326B05007E8250 /* STAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE616DB51C326B05007E8250 /* Build configuration list for PBXNativeTarget "STAPITests" */;
+			buildPhases = (
+				FE616DA71C326B05007E8250 /* Sources */,
+				FE616DA81C326B05007E8250 /* Frameworks */,
+				FE616DA91C326B05007E8250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE616DB21C326B05007E8250 /* PBXTargetDependency */,
+			);
+			name = STAPITests;
+			productName = LFAPITests;
+			productReference = FE616DAB1C326B05007E8250 /* _STAPI.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE616D931C326A91007E8250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = LinkFace;
+				TargetAttributes = {
+					FE616D9A1C326A91007E8250 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					FE616DAA1C326B05007E8250 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FE616D961C326A91007E8250 /* Build configuration list for PBXProject "STAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE616D921C326A91007E8250;
+			productRefGroup = FE616D9C1C326A91007E8250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE616D9A1C326A91007E8250 /* STAPI */,
+				FE616DAA1C326B05007E8250 /* STAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE616DA91C326B05007E8250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8F58201C3EA01E00CD1C02 /* Jay1.jpg in Resources */,
+				FE8F581F1C3EA01E00CD1C02 /* Jack.jpg in Resources */,
+				FE8F58211C3EA01E00CD1C02 /* Jay2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE616D971C326A91007E8250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76F69B21C3A72110091354C /* STImage.m in Sources */,
+				F76F69B01C3A72110091354C /* STFaceSet.m in Sources */,
+				F76F69AF1C3A72110091354C /* STFace.m in Sources */,
+				F76F69B31C3A72110091354C /* STPerson.m in Sources */,
+				F76F69AD1C3A72110091354C /* STAPI.m in Sources */,
+				F76F69B11C3A72110091354C /* STGroup.m in Sources */,
+				F76F69AE1C3A72110091354C /* STCommon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616DA71C326B05007E8250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76F69BF1C3A73CD0091354C /* STAPITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE616DB21C326B05007E8250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE616D9A1C326A91007E8250 /* STAPI */;
+			targetProxy = FE616DB11C326B05007E8250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE616DA21C326A91007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE616DA31C326A91007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE616DA51C326A91007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = _STAPI;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE616DA61C326A91007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = _STAPI;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FE616DB31C326B05007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = STAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SenseTime.STAPITests;
+				PRODUCT_NAME = _STAPI;
+			};
+			name = Debug;
+		};
+		FE616DB41C326B05007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = STAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SenseTime.STAPITests;
+				PRODUCT_NAME = _STAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE616D961C326A91007E8250 /* Build configuration list for PBXProject "STAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616DA21C326A91007E8250 /* Debug */,
+				FE616DA31C326A91007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE616DA41C326A91007E8250 /* Build configuration list for PBXNativeTarget "STAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616DA51C326A91007E8250 /* Debug */,
+				FE616DA61C326A91007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE616DB51C326B05007E8250 /* Build configuration list for PBXNativeTarget "STAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616DB31C326B05007E8250 /* Debug */,
+				FE616DB41C326B05007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE616D931C326A91007E8250 /* Project object */;
+}

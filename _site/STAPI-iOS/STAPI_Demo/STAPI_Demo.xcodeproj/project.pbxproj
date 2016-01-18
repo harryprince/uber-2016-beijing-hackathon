@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA8B5E71C40BCD40044F161 /* FaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5CC1C40BCD40044F161 /* FaceDetectionViewController.m */; };
+		3AA8B5E81C40BCD40044F161 /* FaceIdentifiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5CF1C40BCD40044F161 /* FaceIdentifiViewController.m */; };
+		3AA8B5E91C40BCD40044F161 /* FaceSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5D21C40BCD40044F161 /* FaceSearchViewController.m */; };
+		3AA8B5EA1C40BCD40044F161 /* FaceTrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5D51C40BCD40044F161 /* FaceTrainingViewController.m */; };
+		3AA8B5EB1C40BCD40044F161 /* FaceVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5D81C40BCD40044F161 /* FaceVerifyViewController.m */; };
+		3AA8B5EC1C40BCD40044F161 /* FaceVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8B5D91C40BCD40044F161 /* FaceVerifyViewController.xib */; };
+		3AA8B5ED1C40BCD40044F161 /* GroupListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5DC1C40BCD40044F161 /* GroupListCell.m */; };
+		3AA8B5EE1C40BCD40044F161 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5DE1C40BCD40044F161 /* GroupViewController.m */; };
+		3AA8B5EF1C40BCD40044F161 /* FaceDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5E11C40BCD40044F161 /* FaceDot.m */; };
+		3AA8B5F01C40BCD40044F161 /* ImageFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5E31C40BCD40044F161 /* ImageFace.m */; };
+		3AA8B5F11C40BCD40044F161 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8B5E51C40BCD40044F161 /* ViewController.m */; };
+		3AA8B5F21C40BCD40044F161 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AA8B5E61C40BCD40044F161 /* ViewController.xib */; };
+		F76A17421C3A8BE50028C958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76A172A1C3A8BE50028C958 /* AppDelegate.m */; };
+		F76A17431C3A8BE50028C958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76A172B1C3A8BE50028C958 /* Assets.xcassets */; };
+		F76A17441C3A8BE50028C958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A172C1C3A8BE50028C958 /* LaunchScreen.storyboard */; };
+		F76A17471C3A8BE50028C958 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76A17331C3A8BE50028C958 /* Default-568h@2x.png */; };
+		F76A174E1C3A8BE50028C958 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F76A173C1C3A8BE50028C958 /* main.m */; };
+		F76A17571C3A8BEF0028C958 /* STAPI_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76A17551C3A8BEF0028C958 /* STAPI_DemoTests.m */; };
+		F76A175C1C3A8BFA0028C958 /* STAPI_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F76A175A1C3A8BFA0028C958 /* STAPI_DemoUITests.m */; };
+		F7B7D4351C3A851C00528763 /* STAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D4281C3A851C00528763 /* STAPI.m */; };
+		F7B7D4361C3A851C00528763 /* STCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D42A1C3A851C00528763 /* STCommon.m */; };
+		F7B7D4371C3A851C00528763 /* STFace.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D42C1C3A851C00528763 /* STFace.m */; };
+		F7B7D4381C3A851C00528763 /* STFaceSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D42E1C3A851C00528763 /* STFaceSet.m */; };
+		F7B7D4391C3A851C00528763 /* STGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D4301C3A851C00528763 /* STGroup.m */; };
+		F7B7D43A1C3A851C00528763 /* STImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D4321C3A851C00528763 /* STImage.m */; };
+		F7B7D43B1C3A851C00528763 /* STPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B7D4341C3A851C00528763 /* STPerson.m */; };
+		FE8F58351C3EA86A00CD1C02 /* face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE8F58301C3EA86A00CD1C02 /* face.jpg */; };
+		FE8F58361C3EA86A00CD1C02 /* face_liu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE8F58311C3EA86A00CD1C02 /* face_liu.jpg */; };
+		FE8F58371C3EA86A00CD1C02 /* face_set.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE8F58321C3EA86A00CD1C02 /* face_set.jpg */; };
+		FE8F58381C3EA86A00CD1C02 /* zjl1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8F58331C3EA86A00CD1C02 /* zjl1.png */; };
+		FE8F58391C3EA86A00CD1C02 /* zjl2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE8F58341C3EA86A00CD1C02 /* zjl2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE616D661C325EDB007E8250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE616D441C325EDB007E8250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE616D4B1C325EDB007E8250;
+			remoteInfo = LFAPI_Demo;
+		};
+		FE616D711C325EDB007E8250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE616D441C325EDB007E8250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE616D4B1C325EDB007E8250;
+			remoteInfo = LFAPI_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190E908D1C4B5E0F0070983F /* MyAPIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAPIKey.h; sourceTree = "<group>"; };
+		3AA8B5CB1C40BCD40044F161 /* FaceDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
+		3AA8B5CC1C40BCD40044F161 /* FaceDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionViewController.m; sourceTree = "<group>"; };
+		3AA8B5CE1C40BCD40044F161 /* FaceIdentifiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceIdentifiViewController.h; sourceTree = "<group>"; };
+		3AA8B5CF1C40BCD40044F161 /* FaceIdentifiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceIdentifiViewController.m; sourceTree = "<group>"; };
+		3AA8B5D11C40BCD40044F161 /* FaceSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceSearchViewController.h; sourceTree = "<group>"; };
+		3AA8B5D21C40BCD40044F161 /* FaceSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceSearchViewController.m; sourceTree = "<group>"; };
+		3AA8B5D41C40BCD40044F161 /* FaceTrainingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTrainingViewController.h; sourceTree = "<group>"; };
+		3AA8B5D51C40BCD40044F161 /* FaceTrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTrainingViewController.m; sourceTree = "<group>"; };
+		3AA8B5D71C40BCD40044F161 /* FaceVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceVerifyViewController.h; sourceTree = "<group>"; };
+		3AA8B5D81C40BCD40044F161 /* FaceVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceVerifyViewController.m; sourceTree = "<group>"; };
+		3AA8B5D91C40BCD40044F161 /* FaceVerifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceVerifyViewController.xib; sourceTree = "<group>"; };
+		3AA8B5DB1C40BCD40044F161 /* GroupListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupListCell.h; sourceTree = "<group>"; };
+		3AA8B5DC1C40BCD40044F161 /* GroupListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupListCell.m; sourceTree = "<group>"; };
+		3AA8B5DD1C40BCD40044F161 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		3AA8B5DE1C40BCD40044F161 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		3AA8B5E01C40BCD40044F161 /* FaceDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDot.h; sourceTree = "<group>"; };
+		3AA8B5E11C40BCD40044F161 /* FaceDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDot.m; sourceTree = "<group>"; };
+		3AA8B5E21C40BCD40044F161 /* ImageFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFace.h; sourceTree = "<group>"; };
+		3AA8B5E31C40BCD40044F161 /* ImageFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFace.m; sourceTree = "<group>"; };
+		3AA8B5E41C40BCD40044F161 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AA8B5E51C40BCD40044F161 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AA8B5E61C40BCD40044F161 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F76A17291C3A8BE50028C958 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F76A172A1C3A8BE50028C958 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F76A172B1C3A8BE50028C958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76A172D1C3A8BE50028C958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76A17331C3A8BE50028C958 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F76A173B1C3A8BE50028C958 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76A173C1C3A8BE50028C958 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F76A17541C3A8BEF0028C958 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76A17551C3A8BEF0028C958 /* STAPI_DemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAPI_DemoTests.m; sourceTree = "<group>"; };
+		F76A17591C3A8BFA0028C958 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76A175A1C3A8BFA0028C958 /* STAPI_DemoUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAPI_DemoUITests.m; sourceTree = "<group>"; };
+		F7B7D4271C3A851C00528763 /* STAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAPI.h; sourceTree = "<group>"; };
+		F7B7D4281C3A851C00528763 /* STAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAPI.m; sourceTree = "<group>"; };
+		F7B7D4291C3A851C00528763 /* STCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCommon.h; sourceTree = "<group>"; };
+		F7B7D42A1C3A851C00528763 /* STCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCommon.m; sourceTree = "<group>"; };
+		F7B7D42B1C3A851C00528763 /* STFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFace.h; sourceTree = "<group>"; };
+		F7B7D42C1C3A851C00528763 /* STFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFace.m; sourceTree = "<group>"; };
+		F7B7D42D1C3A851C00528763 /* STFaceSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFaceSet.h; sourceTree = "<group>"; };
+		F7B7D42E1C3A851C00528763 /* STFaceSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFaceSet.m; sourceTree = "<group>"; };
+		F7B7D42F1C3A851C00528763 /* STGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGroup.h; sourceTree = "<group>"; };
+		F7B7D4301C3A851C00528763 /* STGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGroup.m; sourceTree = "<group>"; };
+		F7B7D4311C3A851C00528763 /* STImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STImage.h; sourceTree = "<group>"; };
+		F7B7D4321C3A851C00528763 /* STImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STImage.m; sourceTree = "<group>"; };
+		F7B7D4331C3A851C00528763 /* STPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPerson.h; sourceTree = "<group>"; };
+		F7B7D4341C3A851C00528763 /* STPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPerson.m; sourceTree = "<group>"; };
+		FE616D4C1C325EDB007E8250 /* STAPI_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STAPI_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE616D651C325EDB007E8250 /* STAPI_Demo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STAPI_Demo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE616D701C325EDB007E8250 /* STAPI_Demo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STAPI_Demo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8F58301C3EA86A00CD1C02 /* face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face.jpg; sourceTree = "<group>"; };
+		FE8F58311C3EA86A00CD1C02 /* face_liu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face_liu.jpg; sourceTree = "<group>"; };
+		FE8F58321C3EA86A00CD1C02 /* face_set.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face_set.jpg; sourceTree = "<group>"; };
+		FE8F58331C3EA86A00CD1C02 /* zjl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zjl1.png; sourceTree = "<group>"; };
+		FE8F58341C3EA86A00CD1C02 /* zjl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zjl2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE616D491C325EDB007E8250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616D621C325EDB007E8250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616D6D1C325EDB007E8250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AA8B5C91C40BCD40044F161 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5E41C40BCD40044F161 /* ViewController.h */,
+				3AA8B5E51C40BCD40044F161 /* ViewController.m */,
+				3AA8B5E61C40BCD40044F161 /* ViewController.xib */,
+				3AA8B5CA1C40BCD40044F161 /* FaceDetection */,
+				3AA8B5D61C40BCD40044F161 /* FaceVerify */,
+				3AA8B5D01C40BCD40044F161 /* FaceSearch */,
+				3AA8B5CD1C40BCD40044F161 /* FaceIdentify */,
+				3AA8B5D31C40BCD40044F161 /* FaceTraining */,
+				3AA8B5DF1C40BCD40044F161 /* Model */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		3AA8B5CA1C40BCD40044F161 /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5CB1C40BCD40044F161 /* FaceDetectionViewController.h */,
+				3AA8B5CC1C40BCD40044F161 /* FaceDetectionViewController.m */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		3AA8B5CD1C40BCD40044F161 /* FaceIdentify */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5DA1C40BCD40044F161 /* Group */,
+				3AA8B5CE1C40BCD40044F161 /* FaceIdentifiViewController.h */,
+				3AA8B5CF1C40BCD40044F161 /* FaceIdentifiViewController.m */,
+			);
+			path = FaceIdentify;
+			sourceTree = "<group>";
+		};
+		3AA8B5D01C40BCD40044F161 /* FaceSearch */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5D11C40BCD40044F161 /* FaceSearchViewController.h */,
+				3AA8B5D21C40BCD40044F161 /* FaceSearchViewController.m */,
+			);
+			path = FaceSearch;
+			sourceTree = "<group>";
+		};
+		3AA8B5D31C40BCD40044F161 /* FaceTraining */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5D41C40BCD40044F161 /* FaceTrainingViewController.h */,
+				3AA8B5D51C40BCD40044F161 /* FaceTrainingViewController.m */,
+			);
+			path = FaceTraining;
+			sourceTree = "<group>";
+		};
+		3AA8B5D61C40BCD40044F161 /* FaceVerify */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5D71C40BCD40044F161 /* FaceVerifyViewController.h */,
+				3AA8B5D81C40BCD40044F161 /* FaceVerifyViewController.m */,
+				3AA8B5D91C40BCD40044F161 /* FaceVerifyViewController.xib */,
+			);
+			path = FaceVerify;
+			sourceTree = "<group>";
+		};
+		3AA8B5DA1C40BCD40044F161 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5DB1C40BCD40044F161 /* GroupListCell.h */,
+				3AA8B5DC1C40BCD40044F161 /* GroupListCell.m */,
+				3AA8B5DD1C40BCD40044F161 /* GroupViewController.h */,
+				3AA8B5DE1C40BCD40044F161 /* GroupViewController.m */,
+			);
+			name = Group;
+			path = ../Group;
+			sourceTree = "<group>";
+		};
+		3AA8B5DF1C40BCD40044F161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5E01C40BCD40044F161 /* FaceDot.h */,
+				3AA8B5E11C40BCD40044F161 /* FaceDot.m */,
+				3AA8B5E21C40BCD40044F161 /* ImageFace.h */,
+				3AA8B5E31C40BCD40044F161 /* ImageFace.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F76A17281C3A8BE50028C958 /* STAPI_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3AA8B5C91C40BCD40044F161 /* Class */,
+				F76A17291C3A8BE50028C958 /* AppDelegate.h */,
+				F76A172A1C3A8BE50028C958 /* AppDelegate.m */,
+				F76A172B1C3A8BE50028C958 /* Assets.xcassets */,
+				F76A172C1C3A8BE50028C958 /* LaunchScreen.storyboard */,
+				F76A17331C3A8BE50028C958 /* Default-568h@2x.png */,
+				F76A173B1C3A8BE50028C958 /* Info.plist */,
+				F76A173C1C3A8BE50028C958 /* main.m */,
+				FE8F582F1C3EA86A00CD1C02 /* images */,
+			);
+			path = STAPI_Demo;
+			sourceTree = "<group>";
+		};
+		F76A17531C3A8BEF0028C958 /* STAPI_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76A17541C3A8BEF0028C958 /* Info.plist */,
+				F76A17551C3A8BEF0028C958 /* STAPI_DemoTests.m */,
+			);
+			path = STAPI_DemoTests;
+			sourceTree = "<group>";
+		};
+		F76A17581C3A8BFA0028C958 /* STAPI_DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F76A17591C3A8BFA0028C958 /* Info.plist */,
+				F76A175A1C3A8BFA0028C958 /* STAPI_DemoUITests.m */,
+			);
+			path = STAPI_DemoUITests;
+			sourceTree = "<group>";
+		};
+		F7B7D4261C3A851C00528763 /* STAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F7B7D4271C3A851C00528763 /* STAPI.h */,
+				F7B7D4281C3A851C00528763 /* STAPI.m */,
+				F7B7D4291C3A851C00528763 /* STCommon.h */,
+				F7B7D42A1C3A851C00528763 /* STCommon.m */,
+				F7B7D42B1C3A851C00528763 /* STFace.h */,
+				F7B7D42C1C3A851C00528763 /* STFace.m */,
+				F7B7D42D1C3A851C00528763 /* STFaceSet.h */,
+				F7B7D42E1C3A851C00528763 /* STFaceSet.m */,
+				F7B7D42F1C3A851C00528763 /* STGroup.h */,
+				F7B7D4301C3A851C00528763 /* STGroup.m */,
+				F7B7D4311C3A851C00528763 /* STImage.h */,
+				F7B7D4321C3A851C00528763 /* STImage.m */,
+				F7B7D4331C3A851C00528763 /* STPerson.h */,
+				F7B7D4341C3A851C00528763 /* STPerson.m */,
+			);
+			name = STAPI;
+			path = ../STAPI/STAPI;
+			sourceTree = "<group>";
+		};
+		FE616D431C325EDB007E8250 = {
+			isa = PBXGroup;
+			children = (
+				190E908D1C4B5E0F0070983F /* MyAPIKey.h */,
+				F7B7D4261C3A851C00528763 /* STAPI */,
+				F76A17281C3A8BE50028C958 /* STAPI_Demo */,
+				F76A17531C3A8BEF0028C958 /* STAPI_DemoTests */,
+				F76A17581C3A8BFA0028C958 /* STAPI_DemoUITests */,
+				FE616D4D1C325EDB007E8250 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE616D4D1C325EDB007E8250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE616D4C1C325EDB007E8250 /* STAPI_Demo.app */,
+				FE616D651C325EDB007E8250 /* STAPI_Demo.xctest */,
+				FE616D701C325EDB007E8250 /* STAPI_Demo.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE8F582F1C3EA86A00CD1C02 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FE8F58301C3EA86A00CD1C02 /* face.jpg */,
+				FE8F58311C3EA86A00CD1C02 /* face_liu.jpg */,
+				FE8F58321C3EA86A00CD1C02 /* face_set.jpg */,
+				FE8F58331C3EA86A00CD1C02 /* zjl1.png */,
+				FE8F58341C3EA86A00CD1C02 /* zjl2.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE616D4B1C325EDB007E8250 /* STAPI_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE616D791C325EDB007E8250 /* Build configuration list for PBXNativeTarget "STAPI_Demo" */;
+			buildPhases = (
+				FE616D481C325EDB007E8250 /* Sources */,
+				FE616D491C325EDB007E8250 /* Frameworks */,
+				FE616D4A1C325EDB007E8250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STAPI_Demo;
+			productName = LFAPI_Demo;
+			productReference = FE616D4C1C325EDB007E8250 /* STAPI_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE616D641C325EDB007E8250 /* STAPI_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE616D7C1C325EDB007E8250 /* Build configuration list for PBXNativeTarget "STAPI_DemoTests" */;
+			buildPhases = (
+				FE616D611C325EDB007E8250 /* Sources */,
+				FE616D621C325EDB007E8250 /* Frameworks */,
+				FE616D631C325EDB007E8250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE616D671C325EDB007E8250 /* PBXTargetDependency */,
+			);
+			name = STAPI_DemoTests;
+			productName = LFAPI_DemoTests;
+			productReference = FE616D651C325EDB007E8250 /* STAPI_Demo.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE616D6F1C325EDB007E8250 /* STAPI_DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE616D7F1C325EDB007E8250 /* Build configuration list for PBXNativeTarget "STAPI_DemoUITests" */;
+			buildPhases = (
+				FE616D6C1C325EDB007E8250 /* Sources */,
+				FE616D6D1C325EDB007E8250 /* Frameworks */,
+				FE616D6E1C325EDB007E8250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE616D721C325EDB007E8250 /* PBXTargetDependency */,
+			);
+			name = STAPI_DemoUITests;
+			productName = LFAPI_DemoUITests;
+			productReference = FE616D701C325EDB007E8250 /* STAPI_Demo.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE616D441C325EDB007E8250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = LinkFace;
+				TargetAttributes = {
+					FE616D4B1C325EDB007E8250 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					FE616D641C325EDB007E8250 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FE616D4B1C325EDB007E8250;
+					};
+					FE616D6F1C325EDB007E8250 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FE616D4B1C325EDB007E8250;
+					};
+				};
+			};
+			buildConfigurationList = FE616D471C325EDB007E8250 /* Build configuration list for PBXProject "STAPI_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE616D431C325EDB007E8250;
+			productRefGroup = FE616D4D1C325EDB007E8250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE616D4B1C325EDB007E8250 /* STAPI_Demo */,
+				FE616D641C325EDB007E8250 /* STAPI_DemoTests */,
+				FE616D6F1C325EDB007E8250 /* STAPI_DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE616D4A1C325EDB007E8250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA8B5F21C40BCD40044F161 /* ViewController.xib in Resources */,
+				F76A17431C3A8BE50028C958 /* Assets.xcassets in Resources */,
+				3AA8B5EC1C40BCD40044F161 /* FaceVerifyViewController.xib in Resources */,
+				FE8F58391C3EA86A00CD1C02 /* zjl2.png in Resources */,
+				F76A17441C3A8BE50028C958 /* LaunchScreen.storyboard in Resources */,
+				FE8F58381C3EA86A00CD1C02 /* zjl1.png in Resources */,
+				FE8F58361C3EA86A00CD1C02 /* face_liu.jpg in Resources */,
+				F76A17471C3A8BE50028C958 /* Default-568h@2x.png in Resources */,
+				FE8F58371C3EA86A00CD1C02 /* face_set.jpg in Resources */,
+				FE8F58351C3EA86A00CD1C02 /* face.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616D631C325EDB007E8250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616D6E1C325EDB007E8250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE616D481C325EDB007E8250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76A174E1C3A8BE50028C958 /* main.m in Sources */,
+				3AA8B5E81C40BCD40044F161 /* FaceIdentifiViewController.m in Sources */,
+				F7B7D4391C3A851C00528763 /* STGroup.m in Sources */,
+				F7B7D4361C3A851C00528763 /* STCommon.m in Sources */,
+				3AA8B5F01C40BCD40044F161 /* ImageFace.m in Sources */,
+				F7B7D43B1C3A851C00528763 /* STPerson.m in Sources */,
+				F7B7D4371C3A851C00528763 /* STFace.m in Sources */,
+				3AA8B5E71C40BCD40044F161 /* FaceDetectionViewController.m in Sources */,
+				3AA8B5F11C40BCD40044F161 /* ViewController.m in Sources */,
+				3AA8B5EF1C40BCD40044F161 /* FaceDot.m in Sources */,
+				3AA8B5ED1C40BCD40044F161 /* GroupListCell.m in Sources */,
+				3AA8B5EA1C40BCD40044F161 /* FaceTrainingViewController.m in Sources */,
+				F76A17421C3A8BE50028C958 /* AppDelegate.m in Sources */,
+				F7B7D4351C3A851C00528763 /* STAPI.m in Sources */,
+				3AA8B5EB1C40BCD40044F161 /* FaceVerifyViewController.m in Sources */,
+				3AA8B5EE1C40BCD40044F161 /* GroupViewController.m in Sources */,
+				3AA8B5E91C40BCD40044F161 /* FaceSearchViewController.m in Sources */,
+				F7B7D43A1C3A851C00528763 /* STImage.m in Sources */,
+				F7B7D4381C3A851C00528763 /* STFaceSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616D611C325EDB007E8250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76A17571C3A8BEF0028C958 /* STAPI_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE616D6C1C325EDB007E8250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76A175C1C3A8BFA0028C958 /* STAPI_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE616D671C325EDB007E8250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE616D4B1C325EDB007E8250 /* STAPI_Demo */;
+			targetProxy = FE616D661C325EDB007E8250 /* PBXContainerItemProxy */;
+		};
+		FE616D721C325EDB007E8250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE616D4B1C325EDB007E8250 /* STAPI_Demo */;
+			targetProxy = FE616D711C325EDB007E8250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F76A172C1C3A8BE50028C958 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76A172D1C3A8BE50028C958 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE616D771C325EDB007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE616D781C325EDB007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE616D7A1C325EDB007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = STAPI_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SenseTime.STAPI-Demo";
+				PRODUCT_NAME = STAPI_Demo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE616D7B1C325EDB007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = STAPI_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SenseTime.STAPI-Demo";
+				PRODUCT_NAME = STAPI_Demo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE616D7D1C325EDB007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = STAPI_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SenseTime.STAPI-DemoTests";
+				PRODUCT_NAME = STAPI_Demo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STAPI_Demo.app/STAPI_Demo";
+			};
+			name = Debug;
+		};
+		FE616D7E1C325EDB007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = STAPI_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SenseTime.STAPI-DemoTests";
+				PRODUCT_NAME = STAPI_Demo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/STAPI_Demo.app/STAPI_Demo";
+			};
+			name = Release;
+		};
+		FE616D801C325EDB007E8250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = STAPI_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SenseTime.STAPI-DemoUITests";
+				PRODUCT_NAME = STAPI_Demo;
+				TEST_TARGET_NAME = STAPI_Demo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FE616D811C325EDB007E8250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = STAPI_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SenseTime.STAPI-DemoUITests";
+				PRODUCT_NAME = STAPI_Demo;
+				TEST_TARGET_NAME = STAPI_Demo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE616D471C325EDB007E8250 /* Build configuration list for PBXProject "STAPI_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616D771C325EDB007E8250 /* Debug */,
+				FE616D781C325EDB007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE616D791C325EDB007E8250 /* Build configuration list for PBXNativeTarget "STAPI_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616D7A1C325EDB007E8250 /* Debug */,
+				FE616D7B1C325EDB007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE616D7C1C325EDB007E8250 /* Build configuration list for PBXNativeTarget "STAPI_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616D7D1C325EDB007E8250 /* Debug */,
+				FE616D7E1C325EDB007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE616D7F1C325EDB007E8250 /* Build configuration list for PBXNativeTarget "STAPI_DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE616D801C325EDB007E8250 /* Debug */,
+				FE616D811C325EDB007E8250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE616D441C325EDB007E8250 /* Project object */;
+}

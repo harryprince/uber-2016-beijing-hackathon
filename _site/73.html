@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 95%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
+	<!--换掉那个ak= -->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=q35UBipitBzjM6niHjp560bm"></script>
+	<title>demo</title>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var bm = new BMap.Map("allmap"); //对应div的那个id
+	bm.centerAndZoom(new BMap.Point(116.404,39.915),12);
+	bm.enableScrollWheelZoom();
+
+	var myIcon = new BMap.Icon("img/tower.png", new BMap.Size(68,55)); //更换图片名字就好了，后面那个 BMap.Size在此处是图标可视区域的大小。
+	//具体参考http://developer.baidu.com/map/reference/index.php?title=Class:%E8%A6%86%E7%9B%96%E7%89%A9%E7%B1%BB/Icon 设置图标
+	var marker = new BMap.Marker(new BMap.Point(116.404,39.915));//实例化一个地图上一个点
+	marker.setIcon(myIcon);//为点设置图标
+	bm.addOverlay(marker);//添加到地图上
+
+
+    var myIcon2 = new BMap.Icon("img/tower.png", new BMap.Size(34,20)); //更换图片名字就好了，后面那个 BMap.Size在此处是图标可视区域的大小。
+	//具体参考http://developer.baidu.com/map/reference/index.php?title=Class:%E8%A6%86%E7%9B%96%E7%89%A9%E7%B1%BB/Icon 设置图标
+	var marker2 = new BMap.Marker(new BMap.Point(116.300,39.915));//实例化一个地图上一个点
+	marker2.setIcon(myIcon2);//为点设置图标
+	bm.addOverlay(marker2);//添加到地图上
+
+
+</script>

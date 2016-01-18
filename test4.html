@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PIXI Concentration</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<script src="js/pixi.js/bin/pixi.js"></script>
+	</head>
+	<body>
+		<script>
+		var renderer = PIXI.autoDetectRenderer(800, 600);
+document.body.appendChild(renderer.view);
+
+// create the root of the scene graph
+var stage = new PIXI.Container();
+
+// holder to store the aliens
+var aliens = [];
+
+	// create a new Sprite that uses the image name that we just generated as its source
+	var dude =  PIXI.Sprite.fromImage('img/people1.png');
+	var startPoint = PIXI.Sprite.fromImage('img/people1.png');
+	startPoint.anchor.set(0.5);
+	startPoint.scale.set(0.2);
+	startPoint.position.x= 100;
+	startPoint.position.y= 100;
+	stage.addChild(startPoint)
+
+	var endPoint = PIXI.Sprite.fromImage('img/people1.png');
+	endPoint.anchor.set(0.5);
+	endPoint.scale.set(0.2);
+	endPoint.position.x= 100;
+	endPoint.position.y= 500;
+	stage.addChild(endPoint)
+
+
+
+	// set the anchor point so the texture is centerd on the sprite
+	dude.anchor.set(0.5);
+
+	// set a random scale for the dude - no point them all being the same size!
+	// dude.scale.set(0.8 + Math.random() * 0.3);
+
+	// finally lets set the dude to be at a random position..
+	dude.scale.set(0.2);
+	dude.position.x = 100 ;
+	dude.position.y = 100 ;
+
+	dude.tint = 1 * 0xFFFFFF;
+
+	// create a random speed for the dude between 0 - 2
+	dude.speed = 10 ;
+
+	// finally we push the dude into the aliens array so it it can be easily accessed later
+	aliens.push(dude);
+
+	stage.addChild(dude);
+
+
+// create a bounding box for the little dudes
+requestAnimationFrame(animate);
+
+function animate() {
+
+	// iterate through the dudes and update their position
+	for (var i = 0; i < aliens.length; i++)
+	{
+			var dude = aliens[i];
+			// dude.direction += dude.turningSpeed * 0.01;
+			// dude.position.x += dude.direction * dude.speed;
+			dude.position.x += 0;
+
+			dude.position.y += dude.speed;
+			// dude.rotation = -dude.direction - Math.PI / 2;
+
+			if(dude.position.y==endPoint.position.y){
+				dude.position.y = 300;}
+
+	}
+
+	// time to render the stage!
+	renderer.render(stage);
+	// request another animation frame...
+	requestAnimationFrame(animate);
+}
+
+		</script>
+	</body>
+</html>

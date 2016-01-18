@@ -1,0 +1,64 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <style type="text/css">
+    body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+    p{margin-left:5px; font-size:14px;}
+  </style>
+
+	<title>pixi.js example 13</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+
+	<script src="js/pixi.js/bin/pixi.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+var renderer = PIXI.autoDetectRenderer(800, 600);
+document.body.appendChild(renderer.view);
+
+// create the root of the scene graph
+var stage = new PIXI.Container();
+
+// create a texture from an image path
+var texture = PIXI.Texture.fromImage('img/people1.png');
+
+/* create a tiling sprite ...
+ * requires a texture, a width and a height
+ * in WebGL the image size should preferably be a power of two
+ */
+var tilingSprite = new PIXI.extras.TilingSprite(texture, renderer.width, renderer.height);
+stage.addChild(tilingSprite);
+
+var count = 0;
+
+animate();
+
+function animate() {
+
+    count += 0.005;
+
+    tilingSprite.tileScale.x = 2 ;
+    tilingSprite.tileScale.y = 2 ;
+
+    tilingSprite.tilePosition.x += 0;
+    tilingSprite.tilePosition.y += 1;
+
+    // render the root container
+    renderer.render(stage);
+
+    requestAnimationFrame(animate);
+}
+	</script>
+
+	</body>
+</html>
